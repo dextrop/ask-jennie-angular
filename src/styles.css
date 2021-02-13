@@ -1,0 +1,149 @@
+/* You can add global styles to this file, and also import other style files */
+
+.multiform {
+    box-shadow: 0px 0px 30px rgb(62 14 136 / 12%);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.first-item-margin {
+    margin-top: 0!important;
+}
+
+.padding-20 {
+    padding: 20px;
+}
+
+.margin-bottom-30 {
+    margin-bottom: 30px!important;
+}
+
+
+.margin-top-30 {
+    margin-top: 30px!important;
+}
+
+.h_1 {
+    height: 10vh!important;
+    overflow-y: scroll;
+}
+
+.h_1_25 {
+    height: 12.5vh!important;
+    overflow-y: scroll;
+}
+
+.h_2 {
+    height: 20vh!important;
+    overflow-y: scroll;
+}
+
+.h_3 {
+    height: 30vh!important;
+    overflow-y: scroll;
+}
+
+.h_4 {
+    height: 40vh!important;
+    overflow-y: scroll;
+}
+
+.h_5 {
+    height: 50vh!important;
+    overflow-y: scroll;
+}
+
+.h_6 {
+    height: 60vh!important;
+    overflow-y: scroll;
+}
+
+.h_7 {
+    height: 70vh!important;
+    overflow-y: scroll;
+}
+
+.link {
+    font-size: .9rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.align_item_right {
+    text-align: right;
+    align-items: right;
+}
+
+.align_item_center {
+    text-align: center;
+    width: 100%;
+}
+
+.width_100 {
+    width: 100%;
+}
+
+.btn {
+
+}
+
+.btn-continue {
+    color: var(--primary-light);
+    background: var(--primary-dark);
+    border-radius: 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+    padding: 10px 20px 10px 20px;
+}
+
+
+textarea {
+    width: 100%;    
+    border: 1px solid var(--primary-dark)!important;
+    resize: none;
+    box-shadow: 0px 0px 30px rgb(62 14 136 / 12%);
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+textarea:focus {
+    outline: none !important;
+}
+
+.input-statement {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--primary-dark);
+}
+
+table {
+    width: 100%;
+}
+table tr {
+    padding: 5px 30px 5px 30px;
+}
+
+table tr td {
+    border: 1px solid #1a73e8!important;
+    font-size: 18px;
+    margin: 0;
+}
+table tr th {
+    border: 1px solid #1a73e8!important;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin: 0;
+}

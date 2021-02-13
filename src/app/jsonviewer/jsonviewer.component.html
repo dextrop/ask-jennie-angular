@@ -1,0 +1,40 @@
+<div class="multiform">
+    <small class="link" (click)="gotoprojects()">projects</small> / <small>JSON Viewer</small>
+    <br><br>
+    <div *ngIf="_state_table === false">       
+        <h3 class="input-statement first-item-margin">Input your json</h3>
+        <small class="link" (click)="add_sample_json()">Add Sample JSON</small>
+        <textarea class="h_5" placeholder="Paste your json here" [(ngModel)]='main_json'></textarea>
+        <div class="h_1 width_100 align_item_right">
+            <button class="btn btn-continue" (click)="show_table()">
+                Continue
+            </button>
+        </div>
+    </div>
+    <div *ngIf="_state_table === true">
+        <h3 class="input-statement first-item-margin">Displaying Table</h3>
+        <small class="link" (click)="clear_json()">Download AS CSV</small>
+        <small class="link" (click)="clear_json()">Download AS Excel</small>
+        <small class="link" (click)="clear_json()">Download JSON</small>
+        <small class="link" (click)="clear_json()">Download Package</small>
+        <small class="link" (click)="clear_json()">Download Table Configration For API</small>
+        <small class="link" (click)="clear_json()">Clear</small>
+        <div class="h_6 padding-20 margin-top-30">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                     <th scope="col" *ngFor="let field_key of keys; let j = index">{{field_key}}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let field of _table_json; let i = index">
+                        <td *ngFor="let field_key of keys; let j = index">
+                            {{getValue(field, field_key)}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

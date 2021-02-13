@@ -1,0 +1,12 @@
+<div class="container">
+    <br><br>
+    <h1 class="align_item_center h_1">My Projects</h1>
+    <div class="row">
+        <div class="col-md-4" *ngFor="let project_info of subprojects; let j = index">
+            <div class="project-box h_1_25" (click)="goto(project_info.link)">
+                <h3 class="project-title">{{project_info.name}}</h3>
+                <p class="project-description">{{project_info.description}}</p>
+            </div>
+        </div>
+    </div>
+</div>
